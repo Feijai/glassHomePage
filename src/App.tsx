@@ -7,8 +7,8 @@ export default function App() {
   let element = useRoutes(routes);
 
   return (
-    <div className="container">
+    <>
       {element}
-    </div>
+    </>
   );
 }

@@ -131,18 +131,20 @@ table {
 }
 
 /* 客製CSS */
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-@font-face{ 
-	font-family: 'SansTC';
-	src: url('./assets/NotoSansTC-Light.otf');
+@font-face {
+  font-family: 'SansTC';
+  src: url('./assets/NotoSansTC-Light.otf');
 }
 
-@font-face{ 
-	font-family: 'Italic';
-	src: url('./assets/Roboto-Italic.ttf');
+@font-face {
+  font-family: 'Italic';
+  src: url('./assets/Roboto-Italic.ttf');
 }
 
 .globalRed {
@@ -153,28 +155,55 @@ table {
   background-color: #FBF2F2;
 }
 
-.globalWordWhite{
-  color:white;
+.globalWordWhite {
+  color: white;
 }
 
-.s20{
+.globalWordbrown {
+  color: #650300;
+}
+
+.s64{
+  font-size: 64px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.s36 {
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.s20 {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 100;
 }
 
-.s16{
+.s16 {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 100;
 }
 
-.dfjcsb{
+.s14 {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.dfjcsb {
   display: flex;
   justify-content: space-between;
 }
 
-.dfjcsa{
+.dfjcsa {
   display: flex;
   justify-content: space-around;
 }
