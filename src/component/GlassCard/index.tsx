@@ -17,6 +17,9 @@ const GlassCardCss = styled.div<GlassCardCssProps>`
     img{
         height:${(props) => (props.imgHeight)};
     }
+    .money{
+        font-weight:500;
+    }
     .color{
         input{
             height:24px;
@@ -44,7 +47,7 @@ const GlassCard: React.FC<GlassCardProps> = ({ type, img, imgWidth, imgHeight })
         <img src={img} alt="" />
         <div className="detail dfjcsb">
             <span className="product s24">BJ41600S</span>
-            <span className="money s24">NTD3,490</span>
+            <span className="money s24 globalWordRed">NTD3,490</span>
         </div>
         <div className="color">
             <input type="text" className="globalInputCoffee coffee" readOnly
