@@ -59,15 +59,15 @@ const Header: React.FC = () => {
     return <HeaderCss className='globalRed'>
         <div className="container dfjcsb">
             <div className="logo">
-                <Link to="/" />
+                <Link to="/glassHomePage" />
 
             </div>
             <ul className="dfjcsb">
                 <li >
-                    <Link to="/classFrame" className='globalWordWhite s20'>系列鏡框</Link>
+                    <Link to="/glassHomePage/classFrame" className='globalWordWhite s20'>系列鏡框</Link>
                 </li>
                 <li>
-                    <Link to="/courses" className='globalWordWhite s20'>門市據點</Link>
+                    <Link to="/glassHomePage/courses" className='globalWordWhite s20'>門市據點</Link>
                 </li>
                 <li>
                     <Link to="/nothing-here" className='globalWordWhite s20'>部落格</Link>

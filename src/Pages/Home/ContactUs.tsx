@@ -4,6 +4,9 @@ import styled from "styled-components";
 const ContactUsCss = styled.div`
     .container{
         max-width:636px;
+        h2{
+            font-weight:bold;
+        }
         .head{
             text-align:center;
             font-weight:bold;
@@ -29,13 +32,48 @@ const ContactUsCss = styled.div`
                 .agree{
                     margin-top:16px;
                     display:flex;
-                    align-items:center;
                     .checkbox{
                         height:24px;
                         width:24px;
+                        margin:0;
+                    }
+                    .agreeWord{
+                        margin-left:4px;
                     }
                 }
+                .send{
+                    margin:0 auto;
+                    margin-top:48px;
+                    width:416px;
+                    height:56px;
+                    font-weight:bold;
+                    text-align:center;
+                    line-height:56px;
+                }
             
+        }
+    }
+
+    @media (max-width: 375px) {
+        .container{
+            padding-top:40px;
+            padding-bottom:40px;
+            h2{
+                font-size:24px;
+            }
+            .text{
+                margin-top:24px;
+            }
+            .form{
+                input{
+                    width:348px;
+                    height:36px;
+                }
+                .send{
+                    margin-top:24px;
+                    width:348px;
+                }
+            }
         }
     }
 `
@@ -56,8 +94,9 @@ const ContactUs = () => {
                 <input className="comment" type="text" placeholder="請輸入您的意見" />
                 <div className="agree s16">
                     <input className="checkbox" type="checkbox" />
-                    <div>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</div>
+                    <div className="agreeWord">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</div>
                 </div>
+                <div className="send globalRed s16 globalWordWhite ">確認送出</div>
             </div>
         </div>
     </ContactUsCss>)

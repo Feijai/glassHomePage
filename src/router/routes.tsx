@@ -7,11 +7,11 @@ import GlassFrame from "../Pages/GlassFrame"
 
 const routes: RouteObject[] = [
     {
-      path: "/",
+      path: "/glassHomePage",
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
-        {path:"/classFrame", element:<GlassFrame />  },
+        {path:"/glassHomePage/classFrame", element:<GlassFrame />  },
         // {
         //   path: "/courses",
         //   element: <Courses />,
