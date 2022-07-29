@@ -3,6 +3,7 @@ import type { RouteObject } from "react-router-dom";
 import Layout from './Layout'
 import Home from '../Pages/Home/Home'
 import ErrorPage from '../Pages/ErrorPage'
+import GlassFrame from "../Pages/GlassFrame"
 
 const routes: RouteObject[] = [
     {
@@ -10,6 +11,7 @@ const routes: RouteObject[] = [
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
+        {path:"/classFrame", element:<GlassFrame />  },
         // {
         //   path: "/courses",
         //   element: <Courses />,

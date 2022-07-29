@@ -207,3 +207,9 @@ table {
   display: flex;
   justify-content: space-around;
 }
+
+.dfjccaic{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

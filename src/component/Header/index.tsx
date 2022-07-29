@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             </div>
             <ul className="dfjcsb">
                 <li >
-                    <Link to="/" className='globalWordWhite s20'>系列鏡框</Link>
+                    <Link to="/classFrame" className='globalWordWhite s20'>系列鏡框</Link>
                 </li>
                 <li>
                     <Link to="/courses" className='globalWordWhite s20'>門市據點</Link>
