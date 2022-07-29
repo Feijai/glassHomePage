@@ -192,6 +192,18 @@ img{
   font-weight: 100;
 }
 
+.s42 {
+  font-size: 42px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.s32{
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
 .s36 {
   font-size: 36px;
   line-height: 1.5;

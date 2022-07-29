@@ -26,6 +26,7 @@ const GlassFrameCss = styled.div`
 
     }
     .headPage{
+        display:flex;
         img{
             width:50%;
             height:296px;
@@ -54,7 +55,7 @@ const GlassFrame: React.FC = () => {
     return (
         <>
             <GlassFrameCss>
-                <div className="container ">
+                <div className="container">
                     <h2 className="s32 dfjccaic" onClick={() => handleChangePage('OPTICAL')}>
                         <span>OPTICAL</span>
                         {page === 'OPTICAL' && <div className="unerLine globalRed"></div>}
@@ -80,8 +81,8 @@ const GlassFrame: React.FC = () => {
                 </div>
 
             </GlassFrameCss>
-            {page === 'OPTICAL' && <OpticalPage type={page}/>}
-            {page === 'SUNGLASSES' && <SunglassPage type={page}/>}
+            {page === 'OPTICAL' && <OpticalPage type={page} />}
+            {page === 'SUNGLASSES' && <SunglassPage type={page} />}
         </>
     )
 }

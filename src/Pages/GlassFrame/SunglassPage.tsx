@@ -30,7 +30,7 @@ const SunglassPageCss = styled.div`
 `
 const SunglassPage: React.FC<SunglassPageProps> = ({ type }) => {
     const useImageArray = [p1, p2, p3, p4, p5, p6]
-    return (<SunglassPageCss className="container ">
+    return (<SunglassPageCss className="container paddingTB80">
         <h2 className="s42">Celluloid Combi</h2>
         <h3 className="s32">賽璐珞鈦金屬混合鏡框</h3>
         <div className="cards dfjcsb">
