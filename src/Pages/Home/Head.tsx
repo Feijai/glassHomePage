@@ -3,7 +3,7 @@ import HomeHeader from '../../assets/home-header.png'
 import HomeHeaderSmall from '../../assets/home-header-sm.png'
 import styled from "styled-components";
 
-const HomeCss = styled.div`
+const HomeHeadCss = styled.div`
     background: url(${HomeHeader}) no-repeat center;
     height:787px;
     background-size: cover;
@@ -42,16 +42,16 @@ const HomeCss = styled.div`
     }
 `
 
-const Home: React.FC = () => {
+const Head: React.FC = () => {
     return (
-        <HomeCss>
+        <HomeHeadCss>
             <div className="container">
                 <div className="header s36 globalWordbrown">Promise-Desert 2020 早春系列</div>
                 <div className="header2 s64 globalWordbrown">看得清，才能看得遠</div>
                 <div className="buyNow globalRed globalWordWhite s20">立即購買</div>
             </div>
-        </HomeCss>
+        </HomeHeadCss>
     )
 }
 
-export default Home
+export default Head

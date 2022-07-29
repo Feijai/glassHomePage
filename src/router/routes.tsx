@@ -1,7 +1,7 @@
 import React from 'react';
 import type { RouteObject } from "react-router-dom";
 import Layout from './Layout'
-import Home from '../Pages/Home/Home'
+import Home from '../Pages/Home'
 import ErrorPage from '../Pages/ErrorPage'
 import GlassFrame from "../Pages/GlassFrame"
 

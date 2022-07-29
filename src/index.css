@@ -137,6 +137,10 @@ table {
   box-sizing: border-box;
 }
 
+img{
+  display: block;
+}
+
 @font-face {
   font-family: 'SansTC';
   src: url('./assets/NotoSansTC-Light.otf');
@@ -154,6 +158,7 @@ table {
 .globalWhite {
   background-color: #FBF2F2;
 }
+
 
 .globalWordWhite {
   color: white;
@@ -181,8 +186,20 @@ table {
   font-weight: 100;
 }
 
+.s48 {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
 .s36 {
   font-size: 36px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.s24 {
+  font-size: 24px;
   line-height: 1.5;
   font-weight: 100;
 }
@@ -208,6 +225,11 @@ table {
 .container {
   max-width: 1296px;
   margin: 0 auto;
+}
+
+.paddingTB80{
+  padding-top:80px;
+  padding-bottom:80px;
 }
 
 .dfjcsb {
