@@ -163,7 +163,15 @@ table {
   color: #650300;
 }
 
-.s64{
+.globalInputCoffee {
+  background-color: #5F3E2D
+}
+
+.globalInputTan {
+  background-color: #B75929
+}
+
+.s64 {
   font-size: 64px;
   line-height: 1.5;
   font-weight: 100;
@@ -208,8 +216,8 @@ table {
   justify-content: space-around;
 }
 
-.dfjccaic{
-  display:flex;
+.dfjccaic {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

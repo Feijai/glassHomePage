@@ -31,44 +31,59 @@ const GlassFrameCss = styled.div`
             height:296px;
         }
     }
+    @media (max-width: 375px) {
+        .container{
+            h2{
+                font-size:16px;
+                height:56px;
+            }
+        }
+        .headPage{
+            img{
+                height:136px;
+            }
+    }
+
+    }
 `
 const GlassFrame: React.FC = () => {
     const [page, setPage] = useState<string>('OPTICAL')
     const handleChangePage = (word: string): void => {
         setPage(word)
     }
-    return <GlassFrameCss>
-        <div className="container ">
-            <h2 className="s32 dfjccaic" onClick={() => handleChangePage('OPTICAL')}>
-                <span>OPTICAL</span>
-                {page === 'OPTICAL' && <div className="unerLine globalRed"></div>}
-            </h2>
-            <h2 className="s32 dfjccaic" onClick={() => handleChangePage('SUNGLASSES')}>
-                <span>SUNGLASSES</span>
-                {page === 'SUNGLASSES' && <div className="unerLine globalRed"></div>}
-            </h2>
-            <h2 className="s32 dfjccaic"><span>FUNCTIONAL</span></h2>
-        </div>
-        {page === 'OPTICAL' &&
-            <>
-                <div className="headPage">
-                    <img src={p1} alt="" />
-                    <img src={p2} alt="" />
+    return (
+        <>
+            <GlassFrameCss>
+                <div className="container ">
+                    <h2 className="s32 dfjccaic" onClick={() => handleChangePage('OPTICAL')}>
+                        <span>OPTICAL</span>
+                        {page === 'OPTICAL' && <div className="unerLine globalRed"></div>}
+                    </h2>
+                    <h2 className="s32 dfjccaic" onClick={() => handleChangePage('SUNGLASSES')}>
+                        <span>SUNGLASSES</span>
+                        {page === 'SUNGLASSES' && <div className="unerLine globalRed"></div>}
+                    </h2>
+                    <h2 className="s32 dfjccaic"><span>FUNCTIONAL</span></h2>
                 </div>
-                <OpticalPage />
-            </>
-        }
-        {page === 'SUNGLASSES' &&
-            <>
                 <div className="headPage">
-                    <img src={p3} alt="" />
-                    <img src={p4} alt="" />
+                    {page === 'OPTICAL' ?
+                        <>
+                            <img src={p1} alt="" />
+                            <img src={p2} alt="" />
+                        </>
+                        :
+                        <>
+                            <img src={p3} alt="" />
+                            <img src={p4} alt="" />
+                        </>
+                    }
                 </div>
-                <SunglassPage />
-            </>
-        }
 
-    </GlassFrameCss>
+            </GlassFrameCss>
+            {page === 'OPTICAL' && <OpticalPage type={page}/>}
+            {page === 'SUNGLASSES' && <SunglassPage type={page}/>}
+        </>
+    )
 }
 
 export default GlassFrame;
