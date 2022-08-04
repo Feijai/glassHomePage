@@ -19,9 +19,10 @@ const ProfessionalCss = styled.div`
             justify-content:space-between;
             li{
                 padding:12px;
-                width:330px;
+                width:25%;
             }
             img{
+                margin:0 auto;
                 width:83px;
                 height:83px;
             }
@@ -32,6 +33,17 @@ const ProfessionalCss = styled.div`
             .word2{
                 margin-top:8px;
                 text-align:left;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .container{
+            ul{
+                flex-wrap: wrap;
+                li{
+                    padding:0px;
+                    width:50%;
+                }
             }
         }
     }

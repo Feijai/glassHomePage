@@ -15,7 +15,7 @@ const FooterCss = styled.div`
         font-family: 'SansTC';
         display:flex;
         justify-content:space-between;
-        width:464px;
+        width:35.8%;
         li a{
             text-decoration: none;
         }
@@ -24,7 +24,7 @@ const FooterCss = styled.div`
         margin-top:48px;
         display :flex;
         justify-content:space-between;
-        width:208px;
+        width:16.05%;
         img{
             width:48px;
             height:48px
@@ -73,7 +73,22 @@ hr{
         width:174px;
     }
 }
-
+@media (max-width: 768px){
+    .header{
+        ul{
+            margin-top:20px;
+            width:66.67%;
+        }
+        div{
+            margin-top:20px;
+            width:21.84%;
+            img{
+                width:40px;
+                height:40px
+            }
+        }
+    }
+}
 @media (max-width: 375px){
     .container{
         padding:16px
@@ -139,11 +154,11 @@ const Footer: React.FC = () => {
             <div className="container">
                 <div className="header dfjcsb">
                     <ul className="dfjcsb s16">
-                        <li><Link to="/" className='globalWordWhite '>首頁</Link></li>
-                        <li><Link to="/" className='globalWordWhite '>系列鏡框</Link></li>
-                        <li><Link to="/" className='globalWordWhite '>門市據點</Link></li>
+                        <li><Link to="/glassHomePage" className='globalWordWhite '>首頁</Link></li>
+                        <li><Link to="/glassHomePage/classFrame" className='globalWordWhite '>系列鏡框</Link></li>
+                        <li><Link to="/glassHomePage/location" className='globalWordWhite '>門市據點</Link></li>
                         <li><Link to="/" className='globalWordWhite'>部落格</Link></li>
-                        <li><Link to="/" className='globalWordWhite'>常見問題</Link></li>
+                        <li><Link to="/glassHomePage/question" className='globalWordWhite'>常見問題</Link></li>
                     </ul>
                     <div>
                         <img src={fb} alt="fb" />

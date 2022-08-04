@@ -26,8 +26,13 @@ const HomeHeadCss = styled.div`
             align-items:center;
         }
     }
-    @media (max-width: 375px) {
+    @media (max-width:768px){
         background: url(${HomeHeaderSmall}) center center;
+        .container{
+        }
+    }
+
+    @media (max-width: 375px) {
         background-size: cover;
         height:396px;
         .header{

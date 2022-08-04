@@ -14,48 +14,61 @@ const ContactUsCss = styled.div`
         .text{
             margin-top:48px;
         }
+    }
+    .form{
+        margin-top:24px;
+        span{
+            margin-top:16px;
+            display:block;
+        }
+        input{
+            margin-top:8px;
+            width:100%;
+            height:38px;
+        }
+        .comment{
+            height:136px;
+        }
+        .agree{
+            margin-top:16px;
+            display:flex;
+            .checkbox{
+                height:24px;
+                width:24px;
+                margin:0;
+            }
+            .agreeWord{
+                margin-left:4px;
+            }
+        }
+        .send{
+            margin:0 auto;
+            margin-top:48px;
+            width:416px;
+            height:56px;
+            font-weight:bold;
+            text-align:center;
+            line-height:56px;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        .container{
+            padding:80px 96px;
+            max-width:100%;
+            .text{
+                margin-top:24px;
+            }
+        }
         .form{
-            margin-top:24px;
-
-                span{
-                    margin-top:16px;
-                    display:block;
-                }
-                input{
-                    margin-top:8px;
-                    width:100%;
-                    height:38px;
-                }
-                .comment{
-                    height:136px;
-                }
-                .agree{
-                    margin-top:16px;
-                    display:flex;
-                    .checkbox{
-                        height:24px;
-                        width:24px;
-                        margin:0;
-                    }
-                    .agreeWord{
-                        margin-left:4px;
-                    }
-                }
-                .send{
-                    margin:0 auto;
-                    margin-top:48px;
-                    width:416px;
-                    height:56px;
-                    font-weight:bold;
-                    text-align:center;
-                    line-height:56px;
-                }
-            
+            .send{
+                width:58.33%
+            }
         }
     }
-
     @media (max-width: 375px) {
         .container{
+            padding:12px;
             padding-top:40px;
             padding-bottom:40px;
             h2{
@@ -64,15 +77,14 @@ const ContactUsCss = styled.div`
             .text{
                 margin-top:24px;
             }
-            .form{
-                input{
-                    width:348px;
-                    height:36px;
-                }
-                .send{
-                    margin-top:24px;
-                    width:348px;
-                }
+        }
+        .form{
+            input{
+                height:36px;
+            }
+            .send{
+                margin-top:24px;
+                width:100%;
             }
         }
     }

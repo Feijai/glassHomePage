@@ -30,13 +30,17 @@ const GlassCardCss = styled.div<GlassCardCssProps>`
         margin:0 8px 0 0 ;
         border-radius: 4px;
     }
-
+    @media (max-width: 768px) {
+        width:48.275%;
+        img{
+            width:100%;
+        }
+    }
     @media (max-width: 375px) {
         margin:0 auto;
         width:348px;
         margin-bottom:24px;
         img{
-            width:100%;
             height:${(props) => (props.type === 'OPTICAL' ? "168px" : "224px")}
         }
     }

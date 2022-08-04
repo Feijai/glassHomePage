@@ -12,13 +12,31 @@ const GlassFrameCss = styled.div`
         }
         ul{
             margin-top:48px;
-            li{
+            li{ 
+                width:32.1%;
                 img{
-                    height:416px;
-                    width:416px;
+                    max-height:416px;
+                    width:100%;
                 }
                 h2{
+                    margin-top:8px;
                     font-family:Italic;
+                }
+                p{
+                    overflow:hidden;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .container{
+            padding-bottom:56px;
+            ul{
+                display:block;
+                li{
+                    margin:0 auto;
+                    margin-bottom:24px;
+                    width:48.27%;
                 }
             }
         }
@@ -33,17 +51,14 @@ const GlassFrameCss = styled.div`
             }
             ul{
                 margin-top:0px;
-                display:block;
-                margin: 0 auto;
                 li{
+                    width:100%;
                     padding-top:24px;
-                    
                     img{
-                        margin:0 auto;
-                        height:348px;
-                        width:348px;
+                        height:100%;
                     }
                     h2{
+                        width:100%;
                         font-size:48px;
                     }
                 }
@@ -57,9 +72,9 @@ const GlassFrame: React.FC = () => {
         <div className="container paddingTB80">
             <h2 className="s48 globalWordbrown">經典系列鏡框</h2>
             <ul className="dfjcsb">
-                <li><img src={p1} alt="OPTICAL" /><h2 className="s48 globalWordRed">OPTICAL</h2></li>
-                <li><img src={p2} alt="SUNGLASSES" /><h2 className="s48 globalWordRed">SUNGLASSES</h2></li>
-                <li><img src={p3} alt="FUNCTIONAL" /><h2 className="s48 globalWordRed">FUNCTIONAL</h2></li>
+                <li><img src={p1} alt="OPTICAL" /><h2 className="s48 globalWordRed"><p>OPTICAL</p></h2></li>
+                <li><img src={p2} alt="SUNGLASSES" /><h2 className="s48 globalWordRed"><p>SUNGLASSES</p></h2></li>
+                <li><img src={p3} alt="FUNCTIONAL" /><h2 className="s48 globalWordRed"><p>FUNCTIONAL</p></h2></li>
             </ul>
         </div>
     </GlassFrameCss>

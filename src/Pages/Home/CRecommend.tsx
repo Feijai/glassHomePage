@@ -11,32 +11,45 @@ const CRecommendCss = styled.div`
             text-align:center;
             font-weight:bold;
         }
-        .cards{
-            margin-top:48px;
-            .card{
-                box-shadow: 0px 2px 6px #00000029;
-                img{
-                    width:306px;
-                    height:306px;
+    }
+    .cards{
+        margin-top:48px;
+    }
+    .card{
+        box-shadow: 0px 2px 6px #00000029;
+        width:23.6%;
+        img{
+            width:100%;
+            max-height:306px;
 
-                }
-                .words{
-                    padding:16px;
-                    height:205px;
-                    width:306px;
-                    position:relative;
-                    .name{
-                        font-weight:500;
-                    }
-                    .comment{
-                        margin-top:8px;
-                    }
-                    .date{
-                        position:absolute;
-                        bottom:16px;
-                    }
-                }
+        }
+        .words{
+            padding:16px;
+            height:205px;
+            width:100%;
+            position:relative;
+            .name{
+                font-weight:500;
             }
+            .comment{
+                margin-top:8px;
+            }
+            .date{
+                position:absolute;
+                bottom:16px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .container{
+        }
+        .cards{
+            margin-top:24px;
+            flex-wrap:wrap;
+        }
+        .card{
+            margin-top:24px;
+            width:48.275%;
         }
     }
     @media (max-width: 375px) {
@@ -46,20 +59,19 @@ const CRecommendCss = styled.div`
             .head{
                 font-size:24px;
             }
-            .cards{
-                display:block;
-                margin-top:8px;
-                .card{
-                    margin-top:16px;
-                    img{
-                        width:348px;
-                        margin:0 auto;
-                    }
-                    .words{
-                        width:100%;
-                        margin:0 auto;
-                    }
-                }
+        }
+        .cards{
+            display:block;
+            margin-top:8px;
+        }
+        .card{
+            width:100%;
+            margin-top:16px;
+            img{
+                margin:0 auto;
+            }
+            .words{
+                margin:0 auto;
             }
         }
     }

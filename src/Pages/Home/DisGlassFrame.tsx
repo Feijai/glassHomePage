@@ -18,8 +18,8 @@ const DisGlassFrameCss = styled.div`
             display:flex;
             margin-top:48px;
             li{
+                width:50%;
                 div{
-                    width:648px;
                     height:240px;
                 }
                 .double{
@@ -39,6 +39,17 @@ const DisGlassFrameCss = styled.div`
             }
         }
     }
+    @media (max-width: 768px) {
+        .container{
+            ul{ 
+                display:block;
+                li{ 
+                    margin-top:24px;
+                    width:100%;
+                }
+            }
+        }
+    }
     @media (max-width: 375px) {
         background: url(${bg2}) center center;
         .container{
@@ -48,14 +59,7 @@ const DisGlassFrameCss = styled.div`
             font-size:24px;
         }
         ul{ 
-            display:block;
-            li{
-                margin-top:24px;
-                div{
-                    margin: 0 auto;
-                    width:348px;
-                    height:240px;
-                }
+            li{ 
                 .double{
                     background:url(${p3}) center center;
                     background-size: cover;
@@ -66,9 +70,8 @@ const DisGlassFrameCss = styled.div`
 
                 }
                 h2{ 
-                    margin:0 auto;
                     font-size:48px;
-                    width:348px;
+                    width:100%;
                 }
             }
         }
@@ -81,8 +84,18 @@ const DisGlassFrame: React.FC = () => {
         <div className="container paddingTB80">
             <h2 className="globalWordWhite s48">聯名設計鏡框</h2>
             <ul>
-                <li><div className="double" /><h2 className="globalWhite dfjccalc s48 globalWordRed"><p>DOUBLE A+</p></h2></li>
-                <li><div className="youth" /><h2 className="globalWhite dfjccalc s48 globalWordRed">YOUTH</h2></li>
+                <li>
+                    <div className="double" />
+                    <h2 className="globalWhite dfjccaic s48 globalWordRed">
+                        <p>DOUBLE A+</p>
+                    </h2>
+                </li>
+                <li>
+                    <div className="youth" />
+                    <h2 className="globalWhite dfjccaic s48 globalWordRed">
+                        <p>YOUTH</p>
+                    </h2>
+                </li>
             </ul>
 
         </div>

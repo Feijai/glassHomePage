@@ -8,7 +8,9 @@ import OpticalPage from "./OpticalPage";
 import SunglassPage from "./SunglassPage";
 
 const GlassFrameCss = styled.div`
-    .container{
+    .headerButtom{
+        max-width:1296px;
+        margin:0 auto;
         display:flex;
         h2{
             position:relative;
@@ -32,8 +34,15 @@ const GlassFrameCss = styled.div`
             height:296px;
         }
     }
+    @media (max-width: 768px) {
+        .headerButtom{
+            h2{
+                font-size:24px;
+            }
+        }
+    }
     @media (max-width: 375px) {
-        .container{
+        .headerButtom{
             h2{
                 font-size:16px;
                 height:56px;
@@ -55,7 +64,7 @@ const GlassFrame: React.FC = () => {
     return (
         <>
             <GlassFrameCss>
-                <div className="container">
+                <div className="headerButtom">
                     <h2 className="s32 dfjccaic" onClick={() => handleChangePage('OPTICAL')}>
                         <span>OPTICAL</span>
                         {page === 'OPTICAL' && <div className="unerLine globalRed"></div>}

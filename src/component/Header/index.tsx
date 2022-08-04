@@ -33,6 +33,13 @@ ul{
         }
     }
 }
+@media (max-width: 768px){
+    .container{
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+}
 
 @media (max-width: 375px){
     .container {
@@ -67,13 +74,13 @@ const Header: React.FC = () => {
                     <Link to="/glassHomePage/classFrame" className='globalWordWhite s20'>系列鏡框</Link>
                 </li>
                 <li>
-                    <Link to="/glassHomePage/courses" className='globalWordWhite s20'>門市據點</Link>
+                    <Link to="/glassHomePage/location" className='globalWordWhite s20'>門市據點</Link>
                 </li>
                 <li>
-                    <Link to="/nothing-here" className='globalWordWhite s20'>部落格</Link>
+                    <Link to="/glassHomePage" className='globalWordWhite s20'>部落格</Link>
                 </li>
                 <li>
-                    <Link to="/nothing-here" className='globalWordWhite s20'>常見問題</Link>
+                    <Link to="/glassHomePage/question" className='globalWordWhite s20'>常見問題</Link>
                 </li>
             </ul>
         </div>
