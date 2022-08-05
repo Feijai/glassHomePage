@@ -15,22 +15,8 @@ const routes: RouteObject[] = [
     children: [
       { index: true, element: <Home /> },
       { path: "/glassHomePage/classFrame", element: <GlassFrame /> },
-      // {
-      //   path: "/courses",
-      //   element: <Courses />,
-      //   children: [
-      //     { index: true, element: <CoursesIndex /> },
-      //     { path: "/courses/:id", element: <Course /> },
-      //   ],
-      // },
-      {
-        path: '/glassHomePage/location', element: <Location />,
-        children: [
-          { index: true, element: <Location /> },
-          { path: "/glassHomePage/location/detail", element: <LocationDetail /> },
-        ],
-      },
-
+      { path: '/glassHomePage/location', element: <Location />, },
+      { path: "/glassHomePage/location/detail", element: <LocationDetail /> },
       { path: '/glassHomePage/question', element: <Question /> },
       { path: "*", element: <ErrorPage /> },
     ],

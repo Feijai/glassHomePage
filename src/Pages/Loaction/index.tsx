@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
 import p1 from '../../assets/store-1.png'
 import p2 from '../../assets/store-2.png'
 import p3 from '../../assets/store-3.png'
@@ -113,8 +114,10 @@ interface dataProps {
 }
 
 const Card: React.FC<dataProps> = (data) => {
-    const handleOnClick=() =>{
-        
+    const navigate = useNavigate()
+    const handleOnClick = () => {
+        console.log(123)
+        navigate("/glassHomePage/location/detail", { replace: true, state: { ...data } });
     }
     return (
         <div className="card">
@@ -137,8 +140,8 @@ const Card: React.FC<dataProps> = (data) => {
                     </li>
                 </ul>
                 <div className='detail globalWordWhite globalInputBlack dfjccaic s19'
-                    onClick={()=>{handleOnClick()}}
-                    >詳細資訊</div>
+                    onClick={() => { handleOnClick() }}
+                >詳細資訊</div>
             </div>
         </div>
     )
@@ -151,8 +154,8 @@ const HeaderSelect: React.FC<HeaderSelectProps> = ({ sel, setSel }) => {
             <div className='dflex mgTop36 select'>
                 <h2 className='s24'>選擇地區</h2>
                 <select value={sel} onChange={(e) => { setSel(e.target.value) }} className='s18'>
-                    <option selected value="all">全部</option>
-                    <option selected value="tp">台北市</option>
+                    <option value="all">全部</option>
+                    <option value="tp">台北市</option>
                     <option value="tc">台中市</option>
                     <option value="kh">高雄市</option>
                 </select>
@@ -179,8 +182,8 @@ const Location: React.FC = () => {
         <div className="container mgTop96 mgBot80">
             <HeaderSelect sel={sel} setSel={setSel} />
             <div className='cards'>
-                {dataprocess(dataArray, sel).map((data) => {
-                    return <Card {...data} />
+                {dataprocess(dataArray, sel).map((data, idx) => {
+                    return <Card {...data} key={idx} />
                 })}
             </div>
         </div>
