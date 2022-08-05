@@ -41,7 +41,7 @@ ul{
 
 }
 
-@media (max-width: 375px){
+@media (max-width: 488px){
     .container {
         flex-wrap: wrap;
         justify-content:center;
@@ -77,7 +77,7 @@ const Header: React.FC = () => {
                     <Link to="/glassHomePage/location" className='globalWordWhite s20'>門市據點</Link>
                 </li>
                 <li>
-                    <Link to="/glassHomePage" className='globalWordWhite s20'>部落格</Link>
+                    <Link to="/glassHomePage/blog" className='globalWordWhite s20'>部落格</Link>
                 </li>
                 <li>
                     <Link to="/glassHomePage/question" className='globalWordWhite s20'>常見問題</Link>

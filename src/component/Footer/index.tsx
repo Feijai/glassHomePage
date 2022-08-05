@@ -89,7 +89,7 @@ hr{
         }
     }
 }
-@media (max-width: 375px){
+@media (max-width: 488px){
     .container{
         padding:16px
     }
@@ -157,7 +157,7 @@ const Footer: React.FC = () => {
                         <li><Link to="/glassHomePage" className='globalWordWhite '>首頁</Link></li>
                         <li><Link to="/glassHomePage/classFrame" className='globalWordWhite '>系列鏡框</Link></li>
                         <li><Link to="/glassHomePage/location" className='globalWordWhite '>門市據點</Link></li>
-                        <li><Link to="/" className='globalWordWhite'>部落格</Link></li>
+                        <li><Link to="/glassHomePage/blog" className='globalWordWhite'>部落格</Link></li>
                         <li><Link to="/glassHomePage/question" className='globalWordWhite'>常見問題</Link></li>
                     </ul>
                     <div>

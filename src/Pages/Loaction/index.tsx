@@ -1,11 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
-import p1 from '../../assets/store-1.png'
-import p2 from '../../assets/store-2.png'
-import p3 from '../../assets/store-3.png'
-import p4 from '../../assets/store-4.png'
-import p5 from '../../assets/store-5.png'
+import { dataArray } from './data'
+import { HeaderSelectProps, dataProps } from './interface'
 
 const LoactionCss = styled.div`
     h1{
@@ -34,10 +31,12 @@ const LoactionCss = styled.div`
         row-gap:6rem;
         .card{
             max-width:416px;
-            border: 1px solid #00000020;
             img{
                 width:100%;
                 height:224px;
+            }
+            .cardContainer{
+                border: 1px solid #00000020;
             }
         }
     }
@@ -98,25 +97,9 @@ const LoactionCss = styled.div`
         }
     }
 `
-interface HeaderSelectProps {
-    sel: string;
-    setSel: React.Dispatch<React.SetStateAction<string>>;
-}
-
-interface dataProps {
-    id: number
-    pic: string;
-    header: string;
-    phone: string;
-    time: string;
-    location: string;
-    address: string;
-}
-
-const Card: React.FC<dataProps> = (data) => {
+export const Card: React.FC<dataProps> = (data) => {
     const navigate = useNavigate()
     const handleOnClick = () => {
-        console.log(123)
         navigate("/glassHomePage/location/detail", { replace: true, state: { ...data } });
     }
     return (
@@ -159,18 +142,14 @@ const HeaderSelect: React.FC<HeaderSelectProps> = ({ sel, setSel }) => {
                     <option value="tc">台中市</option>
                     <option value="kh">高雄市</option>
                 </select>
-            </div></>
+            </div>
+        </>
     )
 }
 
 const Location: React.FC = () => {
     const [sel, setSel] = useState<string>('all')
-    const dataArray: dataProps[] =
-        [{ id: 1, pic: p1, header: '台北中山旗艦店', phone: '(02)000-1234', time: '10:00-21:00', location: 'tp', address: '台北市中山區南京東路25巷2-1號', },
-        { id: 2, pic: p2, header: '台北綠園店', phone: '(02)000-2345', time: '10:00-21:00', location: 'tp', address: '台北市中正區復興南路 132-1 號' },
-        { id: 3, pic: p3, header: '台中清水旗艦店', phone: '(04)000-1234', time: '10:00-21:00', location: 'tc', address: '台中市清水區經南一路 23 號 8 樓' },
-        { id: 4, pic: p4, header: '高雄中正形象店', phone: '(07)000-2345', time: '10:00-21:00', location: 'kh', address: '高雄市苓雅區中正路 38 號 12 樓' },
-        { id: 5, pic: p5, header: '台北中山旗艦店', phone: '(07)000-3456', time: '10:00-21:00', location: 'kh', address: '高雄市前鎮區中華一路 63 號 6 樓' }]
+
 
     const dataprocess = (dataArray: dataProps[], sel: string) => {
         return sel !== 'all'
