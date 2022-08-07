@@ -1,20 +1,34 @@
 {
   "files": {
-    "main.css": "/glassHomePage/static/css/main.9addc851.css",
-    "main.js": "/glassHomePage/static/js/main.2464f334.js",
+    "main.css": "/glassHomePage/static/css/main.34625388.css",
+    "main.js": "/glassHomePage/static/js/main.4da0a164.js",
     "static/media/NotoSansTC-Light.otf": "/glassHomePage/static/media/NotoSansTC-Light.cbcea44e8d20d4636c3d.otf",
     "static/media/index-bg.png": "/glassHomePage/static/media/index-bg.635ad2e5798b75671ed5.png",
+    "static/media/blogpage-4.png": "/glassHomePage/static/media/blogpage-4.bf1011ca9a96e7ccb1cc.png",
     "static/media/product-header-3.png": "/glassHomePage/static/media/product-header-3.cfaca87201bbadcc2f09.png",
     "static/media/index-bg-md.png": "/glassHomePage/static/media/index-bg-md.243025c179c472e11ed0.png",
+    "static/media/blog-5.png": "/glassHomePage/static/media/blog-5.51a4b7f89aabed08ae57.png",
     "static/media/product-header-2.png": "/glassHomePage/static/media/product-header-2.8ec673456699673c9eec.png",
     "static/media/home-header.png": "/glassHomePage/static/media/home-header.96ac8227d9121e903ae2.png",
     "static/media/home-section5-1.png": "/glassHomePage/static/media/home-section5-1.590b355bbb59c4113fca.png",
+    "static/media/blog-2.png": "/glassHomePage/static/media/blog-2.8529ef5e10c5b9b8f729.png",
+    "static/media/blog-1.png": "/glassHomePage/static/media/blog-1.71216e47fb1b90f0e6bc.png",
+    "static/media/store-5.png": "/glassHomePage/static/media/store-5.73bbb7ef52902dfd5be7.png",
+    "static/media/store-4.png": "/glassHomePage/static/media/store-4.583a4a6b1d45aab1f842.png",
     "static/media/home-section5-2.png": "/glassHomePage/static/media/home-section5-2.b61aea9a0ea2decffa90.png",
+    "static/media/blog-4.png": "/glassHomePage/static/media/blog-4.129e12a7406443ede4ca.png",
     "static/media/home-header-sm.png": "/glassHomePage/static/media/home-header-sm.a3e32da8225fe880109f.png",
+    "static/media/store-3.png": "/glassHomePage/static/media/store-3.55f8b8d46c91f632ec88.png",
+    "static/media/store-2.png": "/glassHomePage/static/media/store-2.7b46962507d71fb2e163.png",
     "static/media/home-section4-1.png": "/glassHomePage/static/media/home-section4-1.bbb2b4ac4bfa3e5c36b2.png",
+    "static/media/blogpage-2.png": "/glassHomePage/static/media/blogpage-2.15c94db5232c14928104.png",
     "static/media/home-section4-1-sm.png": "/glassHomePage/static/media/home-section4-1-sm.31f44f4f8a72c1c84696.png",
+    "static/media/blogpage-1.png": "/glassHomePage/static/media/blogpage-1.59a699fe88e433ab89eb.png",
+    "static/media/blogpage-3.png": "/glassHomePage/static/media/blogpage-3.b7cb44d44406539ca006.png",
+    "static/media/store-1.png": "/glassHomePage/static/media/store-1.873e9c32c005950a2c20.png",
     "static/media/home-section5-3.png": "/glassHomePage/static/media/home-section5-3.52cd63ede6b132aef62d.png",
     "static/media/home-section3-3.png": "/glassHomePage/static/media/home-section3-3.e8580440c69d34f6e670.png",
+    "static/media/blog-3.png": "/glassHomePage/static/media/blog-3.0155ba2ff33df6d51cfd.png",
     "static/media/home-section4-2.png": "/glassHomePage/static/media/home-section4-2.8ca8158e437bab612813.png",
     "static/media/home-section4-2-sm.png": "/glassHomePage/static/media/home-section4-2-sm.9e68de19779634fb5598.png",
     "static/media/product-4.png": "/glassHomePage/static/media/product-4.9760840d660259448d74.png",
@@ -37,11 +51,11 @@
     "static/media/product-2.png": "/glassHomePage/static/media/product-2.df2883e9e560d9054d82.png",
     "static/media/logo-white.png": "/glassHomePage/static/media/logo-white.f8821cfab3dfaf7e8ad5.png",
     "index.html": "/glassHomePage/index.html",
-    "main.9addc851.css.map": "/glassHomePage/static/css/main.9addc851.css.map",
-    "main.2464f334.js.map": "/glassHomePage/static/js/main.2464f334.js.map"
+    "main.34625388.css.map": "/glassHomePage/static/css/main.34625388.css.map",
+    "main.4da0a164.js.map": "/glassHomePage/static/js/main.4da0a164.js.map"
   },
   "entrypoints": [
-    "static/css/main.9addc851.css",
-    "static/js/main.2464f334.js"
+    "static/css/main.34625388.css",
+    "static/js/main.4da0a164.js"
   ]
 }
