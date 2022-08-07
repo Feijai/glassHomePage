@@ -75,11 +75,32 @@ const BlogCss = styled.div`
         }
     }
     @media (max-width: 710px) {
+        .container{
+            margin-top:4px;
+            margin-bottom:30px;
+        }
+        .cards{
+            row-gap:24px;
+            margin-bottom:64px;
+        }
+
         .textCard{
             max-width:348px;
+            max-height:100%;
+            flex-wrap: wrap;
+            .contain{
+                margin-left:0px;
+                width:100%
+            }
+            h2{
+                margin-top:8px;
+            }
             img{
-                width:100%;
+                max-width:348px;
                 height:208px;
+            }
+            .text2{
+                display:none;
             }
         }
     }
