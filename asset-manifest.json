@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/glassHomePage/static/css/main.34625388.css",
-    "main.js": "/glassHomePage/static/js/main.4da0a164.js",
+    "main.js": "/glassHomePage/static/js/main.0f387062.js",
     "static/media/NotoSansTC-Light.otf": "/glassHomePage/static/media/NotoSansTC-Light.cbcea44e8d20d4636c3d.otf",
     "static/media/index-bg.png": "/glassHomePage/static/media/index-bg.635ad2e5798b75671ed5.png",
     "static/media/blogpage-4.png": "/glassHomePage/static/media/blogpage-4.bf1011ca9a96e7ccb1cc.png",
@@ -52,10 +52,10 @@
     "static/media/logo-white.png": "/glassHomePage/static/media/logo-white.f8821cfab3dfaf7e8ad5.png",
     "index.html": "/glassHomePage/index.html",
     "main.34625388.css.map": "/glassHomePage/static/css/main.34625388.css.map",
-    "main.4da0a164.js.map": "/glassHomePage/static/js/main.4da0a164.js.map"
+    "main.0f387062.js.map": "/glassHomePage/static/js/main.0f387062.js.map"
   },
   "entrypoints": [
     "static/css/main.34625388.css",
-    "static/js/main.4da0a164.js"
+    "static/js/main.0f387062.js"
   ]
 }
