@@ -16,6 +16,7 @@ const GlassCardCss = styled.div<GlassCardCssProps>`
     margin-bottom:80px;
     img{
         height:${(props) => (props.imgHeight)};
+        object-fit: cover;
     }
     .money{
         font-weight:500;

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from '../../assets/logo-white.png'
 import styled from "styled-components";
 
+const host = process.env.REACT_APP_PATH
 const HeaderCss = styled.div`
 align-items:center;
 .logo{
@@ -41,7 +42,7 @@ ul{
 
 }
 
-@media (max-width: 488px){
+@media (max-width: 720px){
     .container {
         flex-wrap: wrap;
         justify-content:center;
@@ -66,21 +67,21 @@ const Header: React.FC = () => {
     return <HeaderCss className='globalRed'>
         <div className="container dfjcsb">
             <div className="logo">
-                <Link to="/glassHomePage" />
+                <Link to="/" />
 
             </div>
             <ul className="dfjcsb">
                 <li >
-                    <Link to="/glassHomePage/classFrame" className='globalWordWhite s20'>系列鏡框</Link>
+                    <Link to="/classFrame" className='globalWordWhite s20'>系列鏡框</Link>
                 </li>
                 <li>
-                    <Link to="/glassHomePage/location" className='globalWordWhite s20'>門市據點</Link>
+                    <Link to="/location" className='globalWordWhite s20'>門市據點</Link>
                 </li>
                 <li>
-                    <Link to="/glassHomePage/blog" className='globalWordWhite s20'>部落格</Link>
+                    <Link to="/blog" className='globalWordWhite s20'>部落格</Link>
                 </li>
                 <li>
-                    <Link to="/glassHomePage/question" className='globalWordWhite s20'>常見問題</Link>
+                    <Link to="/question" className='globalWordWhite s20'>常見問題</Link>
                 </li>
             </ul>
         </div>

@@ -73,7 +73,7 @@ hr{
         width:174px;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 930px){
     .header{
         ul{
             margin-top:20px;

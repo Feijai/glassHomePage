@@ -100,7 +100,7 @@ const LoactionCss = styled.div`
 export const Card: React.FC<dataProps> = (data) => {
     const navigate = useNavigate()
     const handleOnClick = () => {
-        navigate("/glassHomePage/location/detail", { replace: true, state: { ...data } });
+        navigate("/location/detail", { replace: true, state: { ...data } });
     }
     return (
         <div className="card">

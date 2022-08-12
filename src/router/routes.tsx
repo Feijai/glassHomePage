@@ -8,18 +8,19 @@ import Question from '../Pages/Question';
 import Location from '../Pages/Loaction'
 import LocationDetail from '../Pages/Loaction/LocationDetail';
 import Blog from '../Pages/Blog'
+const host = process.env.REACT_APP_PATH
 
 const routes: RouteObject[] = [
   {
-    path: "/glassHomePage",
+    path: `${host}/`,
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "/glassHomePage/classFrame", element: <GlassFrame /> },
-      { path: '/glassHomePage/location', element: <Location />, },
-      { path: "/glassHomePage/location/detail", element: <LocationDetail /> },
-      { path: '/glassHomePage/question', element: <Question /> },
-      { path: '/glassHomePage/blog', element: <Blog /> },
+      { path: `${host}/classFrame`, element: <GlassFrame /> },
+      { path: `${host}/location`, element: <Location />, },
+      { path: `${host}/location/detail`, element: <LocationDetail /> },
+      { path: `${host}/question`, element: <Question /> },
+      { path: `${host}/blog`, element: <Blog /> },
       { path: "*", element: <ErrorPage /> },
     ],
   },
